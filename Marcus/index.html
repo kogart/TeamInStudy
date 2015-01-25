@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
 	<div id="menu">
 		<ul>
-			<li class="selected"><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="support.html">Support</a></li>
-			<li><a href="faqs.html">FAQs</a></li>
-			<li><a href="events.html">Events</a></li>
+			<li title="Välkommen till InStudy!", value="Detta är vårt hem på nätet", class="selected"><a>Hem</a></li>
+			<li title="AAA", value="Detta är sida AAA"><a>A</a></li>
+			<li title="BBB", value="Detta är sida BBB"><a>B</a></li>
+			<li title="CCC", value="Detta är sida CCC"><a>C</a></li>
+			<li title="DDD", value="Detta är sida DDD"><a>D</a></li>
+			<li title="EEE", value="Detta är sida EEE"><a>E</a></li>
 		</ul>
 	</div>
-	<h1>Home</h1>
-	<p>This is the home page.</p>
+        
+        
+        <div id="pageText">
+            <h1>Välkommen till InStudy!</h1>
+            <p>Detta är vårt hem på nätet</p>
+        </div>
+        
+	
+	<div class="controls" id="colorMenu">
+		<ul>
+			<li class="gray selected"></li>
+			<li class="red"></li>
+			<li class="blue"></li>
+			<li class="yellow"></li>
+		</ul>
+	</div>
+	
+	
+	
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="script.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
