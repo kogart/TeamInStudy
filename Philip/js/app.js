@@ -1,8 +1,8 @@
-//Problem: It look gross in smaller browser widths and small devices
-//Solution: To hide the text links and swap them out with a more appropriate navigation
 
-//Create a select and append to #menu
 var $select = $("<select></select>");
+var siteStyle = "Default";
+
+
 $("#menu").append($select);
 
 //Cycle over menu links
@@ -27,6 +27,83 @@ $("#menu a").each(function(){
 $select.change(function(){
   window.location = $select.val();
 });
+
+
+$('#lightSwitch').click(function (){
+  if (siteStyle === "Default") {
+   siteStyle = "Dark";
+   $('link[href="css/style.css"]').attr('href','css/mundusDarkStyle.css');
+   $(this).text('Turn on the lights');
+  } else {
+    siteStyle = "Default";
+   $('link[href="css/mundusDarkStyle.css"]').attr('href','css/style.css');
+   $(this).text('Turn off the lights');
+  }
+
+});
+
+
+
+
+var $password = $("#password");
+var $confirmPassword = $("#confirm_password");
+
+$("form span").hide();
+
+
+function isPasswordValid() {
+  return $password.val().length > 8;
+  }
+
+function arePasswordsMatching() {
+  return $password.val() === $confirmPassword.val();
+}
+
+function canSubmit() {
+ return isPasswordValid() && arePasswordsMatching(); 
+}
+
+function passwordEvent(){
+  
+    if(isPasswordValid()) {
+     
+     $password.next().hide();
+  
+   } else {
+     
+        $password.next().show();
+       
+     }
+}
+  
+
+function confirmPasswordEvent() {
+ 
+  if(arePasswordsMatching()){
+    
+    $confirmPassword.next().hide();
+    
+  } else {
+    
+   $confirmPassword.next().show();
+    
+  }
+  
+}
+
+function enableSubmitEvent(){
+ $("#submit").prop("disabled", !canSubmit()); 
+}
+
+
+$password.focus(passwordEvent).keyup(passwordEvent).keyup(confirmPasswordEvent).keyup(enableSubmitEvent);
+
+
+$confirmPassword.focus(confirmPasswordEvent).keyup(confirmPasswordEvent).keyup(enableSubmitEvent);
+
+enableSubmitEvent();
+
+
 
 
 

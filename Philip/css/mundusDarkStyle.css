@@ -5,11 +5,11 @@
 }
 
 body {
-	background: #fff;
+	background: #384047;
 }
 
 #menu {
-	background: #384047;
+	background: #14171a;
 	height: 60px;
 	padding: 0 5px 0;
 	text-align: center;
@@ -49,14 +49,12 @@ select {
 h1 {
 	margin: 40px 0 10px;
 	text-align: center;
-	color: #384047;
+	color: #fff;
 }
 p {
 	text-align: center;
-	color: #777;
+	color: #d6dbdf;
 }
-
-	
 
 
 #buttons {
@@ -79,6 +77,7 @@ p {
 	}
 	
 }
+
 
 
 
