@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" media="screen" title="demo" charset="utf-8">
+</head>
+<body>
+    <!-- Start of first page -->
+    <div data-role="page" id="foo">
+
+        <div data-role="header" style="overflow:hidden;">
+            <h1>Home</h1>
+            <div data-role="navbar" data-iconpos="right">
+                <ul>
+                    <li><a href="#foo" class="ui-state-persist" <button data-icon="home">Home</button></a></li>
+                    <li><a href="#bar" <button data-icon="grid">Gallery</button></a></li>
+                    <li><a href="#sea" <button data-icon="search">Search</button></a></li>
+                </ul>
+            </div><!-- /navbar -->
+         
+        </div><!-- /header -->
+        
+            <a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Basic Popup Test</a>
+            <div data-role="popup" id="popupBasic">
+            <p>123 322</p>
+            </div>
+            
+            <p class="testx">
+                <span>TEST</span>
+            </p>
+        
+    </div><!-- /page -->
+
+
+    <!-- Start of second page -->
+    <div data-role="page" id="bar">
+        
+        <div data-role="header" style="overflow:hidden;">
+            <h1>Gallery</h1>
+            <div data-role="navbar" data-iconpos="right">
+                <ul>
+                    <li><a href="#foo" <button data-icon="home">Home</button></a></li>
+                    <li><a href="#bar" class="ui-state-persist" <button data-icon="grid">Gallery</button></a></li>
+                    <li><a href="#sea" <button data-icon="search">Search</button></a></li>
+                </ul>
+            </div><!-- /navbar -->
+            
+        <!-- listview gallery-->    
+        <ul data-role="listview" data-split-icon="gear" data-split-theme="a" data-inset="true">
+                <li><a href="#">
+                    <img src="img/everything_matters.jpg">
+            <h2>Everything Matters!</h2>
+            <p>Ron Currie Jr</p></a>
+                <a href="#em" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+            </li>
+            <li><a href="#">
+                <img src="img/three_delays.jpg">
+            <h2>Three Delays</h2>
+            <p>Charlie Smith</p></a>
+                <a href="#td" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+            </li>
+            <li><a href="#">
+                <img src="img/what_the_thunder_said.jpg">
+            <h2>What The Thunder Said</h2>
+            <p>Janet Peery</p></a>
+                <a href="#wtts" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+            </li>
+        </ul>
+        
+        <!-- link everything matters -->
+        <div data-history="false" data-role="popup" id="em" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+            <h3>Everything Matters!</h3>
+        <p>Besök Sida?</p>
+            <a href="http://bookcoverarchive.com/book/everything_matters" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">Ja</a>
+            <a href="#bar" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">Nej</a>
+        </div>
+        
+        <!-- link three delays -->
+        <div data-history="false" data-role="popup" id="td" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+            <h3>Three Delays</h3>
+        <p>Besök Sida?</p>
+            <a href="http://bookcoverarchive.com/book/three_delays" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">Ja</a>
+            <a href="#bar" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">Nej</a>
+        </div>
+        
+        <!-- link what the thunder said -->
+        <div data-history="false" data-role="popup" id="wtts" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
+            <h3>What The Thunder Said</h3>
+        <p>Besök Sida?</p>
+            <a href="http://bookcoverarchive.com/book/what_the_thunder_said" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini">Ja</a>
+            <a href="#bar" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">Nej</a>
+        </div>
+        
+        </div><!-- /header -->
+    
+    </div><!-- /page -->
+   
+    
+    <!-- Start of third page -->
+    <div data-role="page" id="sea">
+        
+        <div data-role="header" style="overflow:hidden;">
+            <h1>Search</h1>
+            <div data-role="navbar" data-iconpos="right">
+                <ul>
+                    <li><a href="#foo" <button data-icon="home">Home</button></a></li>
+                    <li><a href="#bar" <button data-icon="grid">Gallery</button></a></li>
+                    <li><a href="#sea" class="ui-state-persist" <button data-icon="search">Search</button></a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /header -->
+        
+    </div><!-- /page -->
+
+
+    <!-- jquery mobile -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <!-- jquery -->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="demo.js"></script>
+
+</body>
+</html>
