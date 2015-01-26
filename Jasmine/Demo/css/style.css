@@ -12,6 +12,7 @@ button {
 	background: #384047;
 }
 
+
 #menuButton {
   background: #384047;
 }
@@ -54,6 +55,9 @@ h1 {
 p {
 	text-align: center;
 	color: #777;
+}
+#titel{
+	font-size: 50px;
 }
 
 
