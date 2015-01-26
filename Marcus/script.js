@@ -3,7 +3,7 @@ var myHeader = $("#pageText h1");
 var myText = $("#pageText p");
 
 
-//NŠär man trycker påŒ ett element i toppmenyn
+//Press element in meny
 $("#menu li").click(function(){
 
   $(this).siblings().removeClass("selected");
@@ -22,7 +22,7 @@ $("#menu li").click(function(){
 });
 
 
-//När man trycker på en färg
+//Press colorMenu
 $("#colorMenu").on("click", "li", function(){
   //Deselect sibling elements
   $(this).siblings().removeClass("selected");
