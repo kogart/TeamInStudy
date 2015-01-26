@@ -25,6 +25,8 @@ button {
 	background: #384047;
 }
 
+	
+}
 
 form {
   background: #fff;
@@ -43,23 +45,24 @@ select {
 	float: left;
 }
 
-
-h1 {
-	margin: 40px 0 10px;
+p.titel {
 	text-align: center;
-	line-height: 50px;
-	color: #384047;
+	line-height: 100px;
+	color: #fff;
+	font-size: 40px;
+	background-color: #888C91;
+	text-shadow: 2px 2px #384047;
+}
+
+
+p.spoiler {
+	text-align: center;
 }
 
 
 p {
-	text-align: center;
 	color: #777;
 }
-#titel{
-	font-size: 50px;
-}
-
 
 // Del 2
 

@@ -10,7 +10,7 @@
     <div data-role="page" id="foo">
 
         <div data-role="header">
-            <p id="titel">Välkommen till InStudy</p>
+            <p class="titel">Välkommen till InStudy</p>
             <div data-role="navbar" data-iconpos="right">
                 <ul>
                     <li><a href="#foo" class="ui-state-persist" <button  data-icon="home">Start</button></a></li>
@@ -59,10 +59,17 @@
             <!-- /Popups -->
             
             <br><br><br>
+            
+        <div data-role="main" class="ui-content">
+            <p><button class="swipe">SWIPE</button></p>
+        </div>
         
-            <p class="testx">
-                <span>TEST</span>
-            </p>
+        <div>
+        <p class="spoiler">
+            <button>!!! SPOILER ALERT !!!</button>
+            <span>Ja, det är sant!</span>
+        </p>
+        </div>
         
     
     
@@ -74,7 +81,7 @@
     <div data-role="page" id="bar">
         
         <div data-role="header">
-            <p id="titel">Studiematerial</p>
+            <p class="titel">Studiematerial</p>
             <div data-role="navbar" data-iconpos="right">
                 <ul>
                     <li><a href="#foo" <button data-icon="home">Start</button></a></li>
@@ -139,7 +146,7 @@
         
         <div data-role="header" style="overflow:hidden;">
 
-            <p id="titel">Inställningar</p>
+            <p class="titel">Inställningar</p>
             <div data-role="navbar" data-iconpos="right">
                 <ul>
                     <li><a href="#foo" <button data-icon="home">Start</button></a></li>
@@ -155,9 +162,9 @@
             
             <div class="controls" id="colorMenu">
 		<ul>
-			<li class="gray selected"></li>
+			<li class="gray"></li>
 			<li class="red"></li>
-			<li class="blue"></li>
+			<li class="blue selected"></li>
 			<li class="yellow"></li>
 		</ul>
 	    </div>
@@ -175,8 +182,7 @@
     
     <!-- jquery -->
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="js/jasmine.js"></script>
-    <script src="js/marcus.js"></script>
+    <script src="js/scripts.js"></script>
     
 
 </body>

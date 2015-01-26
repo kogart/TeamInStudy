@@ -1,4 +1,5 @@
-var color = "#384047";
+var bgColor = "#346799";
+var color = "#4fa3fc";
 var myHeader = $("#pageText h1");
 var myText = $("#pageText p");
 
@@ -30,9 +31,49 @@ $("#colorMenu").on("click", "li", function(){
   $(this).addClass("selected");
   //cache current color
   color = $(this).css("background-color");
+
+  // Röd
+  if(color === "rgb(252, 76, 79)"){
+    bgColor = "#972E2F";
+  }
+  
+  // Svart
+  else if(color === "rgb(56, 64, 71)"){
+    bgColor = "#888c91"; 
+  }
+  
+  // Blå
+  else if(color === "rgb(79, 163, 252)"){
+    bgColor = "#346799"; 
+  }
+  
+  // Gul
+  else if(color === "rgb(236, 209, 63)"){
+    bgColor = "#D48919"; 
+  }
+  
   $(".ui-state-persist").css("background", color);
-  $("h1").css("color", color);
+  $(".titel").css("background-color", bgColor);
 });
 
 $(".ui-state-persist").css("background", color);
+$(".titel").css("background-color", bgColor);
+
+
+// Jasmin
+$(".spoiler span").hide();
+$(".spoiler button").click(function(){
+
+  $(this).remove();
+  $(".spoiler span").show();
+
+});
+
+$(document).on("pagecreate","#foo",function(){
+  $(".swipe").on("swipe",function(){
+    $(".swipe").text("INSTUDY R00000X");
+  });                       
+});
+
+
 
