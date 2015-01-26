@@ -9,13 +9,13 @@
     <!-- Start of first page -->
     <div data-role="page" id="foo">
 
-        <div data-role="header" style="overflow:hidden;">
-            <h1>Välkommen till InStudy</h1>
+        <div data-role="header">
+            <h1 id="titel">Välkommen till InStudy</h1>
             <div data-role="navbar" data-iconpos="right">
                 <ul>
-                    <li><a href="#foo" class="ui-state-persist" <button  data-icon="home">Home</button></a></li>
-                    <li><a href="#bar" <button data-icon="grid">Gallery</button></a></li>
-                    <li><a href="#sea" <button data-icon="gear">Settings</button></a></li>
+                    <li><a href="#foo" class="ui-state-persist" <button  data-icon="home">Start</button></a></li>
+                    <li><a href="#bar" <button data-icon="grid">Studiematerial</button></a></li>
+                    <li><a href="#sea" <button data-icon="gear">Inställningar</button></a></li>
 
                 </ul>
             </div><!-- /navbar -->
@@ -23,17 +23,17 @@
         </div><!-- /header -->
         
         <!-- Popups -->
+        <br><br><br>
         <div style="text-align: center">
-            <a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Basic Popup Test</a>
+            <a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Vanlig Popup</a>
             <div data-role="popup" id="popupBasic">
-            <p>Simple Popup</p>
+            <p>Jag är en vanlig Popup!</p>
             </div>
                       
             <a href="#myPopup" data-rel="popup" class="ui-btn ui-shadow ui-btn-inline ui-corner-all">Close Button/Dissmisable</a>
             <div data-role="popup" id="myPopup" class="ui-content">
             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-            <p>I have a close button at the top right corner.</p>
-            <p><b>Tip:</b> You can also click outside to close me.</p>
+            <p>Jag kan stängas både genom ett klick i hörnet, eller ett klick utanför.</p>
             </div>
             
             <a href="#myPopup3" data-rel="popup" class="ui-btn ui-shadow ui-btn-inline ui-corner-all">Non Dismissable</a>
@@ -56,12 +56,13 @@
             </div>
         </div>
             <!-- /Popups -->
+            
+            <br><br><br>
         
             <p class="testx">
                 <span>TEST</span>
             </p>
         
-    
     
     
     
@@ -72,12 +73,12 @@
     <div data-role="page" id="bar">
         
         <div data-role="header">
-            <h1>Gallery</h1>
+            <h1>Studiematerial</h1>
             <div data-role="navbar" data-iconpos="right">
                 <ul>
-                    <li><a href="#foo" <button data-icon="home">Home</button></a></li>
-                    <li><a href="#bar" class="ui-state-persist" <button data-icon="grid">Gallery</button></a></li>
-                    <li><a href="#sea" <button data-icon="gear">Settings</button></a></li>
+                    <li><a href="#foo" <button data-icon="home">Start</button></a></li>
+                    <li><a href="#bar" class="ui-state-persist" <button data-icon="grid">Studiematerial</button></a></li>
+                    <li><a href="#sea" <button data-icon="gear">Inställningar</button></a></li>
                 </ul>
             </div><!-- /navbar -->
             
@@ -137,12 +138,12 @@
         
         <div data-role="header" style="overflow:hidden;">
 
-            <h1>Settings</h1>
+            <h1>Inställningar</h1>
             <div data-role="navbar" data-iconpos="right">
                 <ul>
-                    <li><a href="#foo" <button data-icon="home">Home</button></a></li>
-                    <li><a href="#bar" <button data-icon="grid">Gallery</button></a></li>
-                    <li><a href="#sea" class="ui-state-persist" <button  data-icon="gear">Settings</button></a></li>
+                    <li><a href="#foo" <button data-icon="home">Start</button></a></li>
+                    <li><a href="#bar" <button data-icon="grid">Studiematerial</button></a></li>
+                    <li><a href="#sea" class="ui-state-persist" <button  data-icon="gear">Inställningar</button></a></li>
                 </ul>
             </div><!-- /navbar -->
         </div><!-- /header -->
