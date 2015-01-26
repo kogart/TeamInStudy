@@ -30,9 +30,9 @@ $("#colorMenu").on("click", "li", function(){
   $(this).addClass("selected");
   //cache current color
   color = $(this).css("background-color");
-  $("#menu").css("background", color);
-  $("ul li a").css("color", "white");
-  $("ul li.selected a").css("color", color);
+  $(".ui-state-persist").css("background", color);
   $("h1").css("color", color);
-  $("p").css("color", color);
 });
+
+$(".ui-state-persist").css("background", color);
+
