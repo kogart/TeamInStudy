@@ -57,6 +57,13 @@ p.titel {
 
 p.spoiler {
 	text-align: center;
+	width: 500px;
+}
+
+
+p.swipe {
+	text-align: center;
+	width: 500px;
 }
 
 
