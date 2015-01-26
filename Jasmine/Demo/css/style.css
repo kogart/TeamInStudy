@@ -1,4 +1,75 @@
-// Marcus kod
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+	background: #fff;
+}
+
+
+form {
+  background: #fff;
+  padding: 4em 4em 2em;
+  max-width: 400px;
+  margin: 100px auto 0;
+  box-shadow: 0 0 1em #222;
+  border-radius: 5px;
+}
+
+
+ul {
+	list-style: none;
+}
+
+
+ul li {
+	display: inline-block;
+	width: 84px;
+	text-align: center;
+}
+
+
+ul li a {
+	color: #fff;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+}
+
+
+ul li.selected {
+	background: #fff;
+}
+
+
+ul li.selected a {
+	color: #384047;
+}
+
+
+select {
+	width: 95%;
+	margin: 11px  0 11px 2%;
+	float: left;
+}
+
+
+h1 {
+	margin: 40px 0 10px;
+	text-align: center;
+	color: #384047;
+}
+
+
+p {
+	text-align: center;
+	color: #777;
+}
+
+
+// Del 2
 
 .controls {
 	min-height: 60px;
@@ -107,5 +178,3 @@
 	}
 	
 }
-
-// Slut Marcus kod
