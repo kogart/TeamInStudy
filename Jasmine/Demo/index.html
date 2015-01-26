@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" media="screen" title="demo" charset="utf-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="demo" charset="utf-8">
 </head>
 <body>
     <!-- Start of first page -->
@@ -13,7 +13,7 @@
                 <ul>
                     <li><a href="#foo" class="ui-state-persist" <button data-icon="home">Home</button></a></li>
                     <li><a href="#bar" <button data-icon="grid">Gallery</button></a></li>
-                    <li><a href="#sea" <button data-icon="search">Search</button></a></li>
+                    <li><a href="#sea" <button data-icon="search">Settings</button></a></li>
                 </ul>
             </div><!-- /navbar -->
          
@@ -28,6 +28,10 @@
                 <span>TEST</span>
             </p>
         
+    
+    
+    
+    
     </div><!-- /page -->
 
 
@@ -40,7 +44,7 @@
                 <ul>
                     <li><a href="#foo" <button data-icon="home">Home</button></a></li>
                     <li><a href="#bar" class="ui-state-persist" <button data-icon="grid">Gallery</button></a></li>
-                    <li><a href="#sea" <button data-icon="search">Search</button></a></li>
+                    <li><a href="#sea" <button data-icon="search">Settings</button></a></li>
                 </ul>
             </div><!-- /navbar -->
             
@@ -99,15 +103,32 @@
     <div data-role="page" id="sea">
         
         <div data-role="header" style="overflow:hidden;">
-            <h1>Search</h1>
+            <h1>Settings</h1>
             <div data-role="navbar" data-iconpos="right">
                 <ul>
                     <li><a href="#foo" <button data-icon="home">Home</button></a></li>
                     <li><a href="#bar" <button data-icon="grid">Gallery</button></a></li>
-                    <li><a href="#sea" class="ui-state-persist" <button data-icon="search">Search</button></a></li>
+                    <li><a href="#sea" class="ui-state-persist" <button data-icon="search">Settings</button></a></li>
                 </ul>
             </div><!-- /navbar -->
         </div><!-- /header -->
+        
+            
+            
+            
+            
+            <div class="controls" id="colorMenu">
+		<ul>
+			<li class="gray selected"></li>
+			<li class="red"></li>
+			<li class="blue"></li>
+			<li class="yellow"></li>
+		</ul>
+	    </div>
+        
+        
+        
+        
         
     </div><!-- /page -->
 
@@ -119,7 +140,10 @@
     
     <!-- jquery -->
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="demo.js"></script>
+    <script src="js/jasmine.js"></script>
+    <script src="js/marcus.js"></script>
+    
+
 
 </body>
 </html>
