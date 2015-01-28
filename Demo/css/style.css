@@ -49,7 +49,7 @@ p.titel {
 	text-align: center;
 	line-height: 100px;
 	color: #fff;
-	font-size: 40px;
+	font-size: 32px;
 	background-color: #888C91;
 	text-shadow: 2px 2px #384047;
 }
@@ -57,15 +57,27 @@ p.titel {
 
 p.spoiler {
 	text-align: center;
-	width: 500px;
+	font-size: 22px;
 }
 
+#knappar {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 70%;
+}
 
 p.swipe {
 	text-align: center;
-	width: 500px;
+	font-size: 22px;
 }
 
+#swipe {
+	text-height: 200px;
+}
+
+}
 
 p {
 	color: #777;

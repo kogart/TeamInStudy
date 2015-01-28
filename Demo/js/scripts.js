@@ -71,7 +71,7 @@ $(".spoiler button").click(function(){
 
 $(document).on("pagecreate","#foo",function(){
   $(".swipe").on("swipe",function(){
-    $(".swipe").text("INSTUDY R00000X");
+    $(".swipe").text("Ja, det är sant.");
   });                       
 });
 
